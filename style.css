@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+}
+
+body {
+  color: #faf7fd;
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.profile > img {
+  margin-top: 5em;
+  padding: 6px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #bb99dd;
+  width: 213px;
+  height: 213px;
+  border-radius: 50%;
+}
+.profile > p {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 1em;
+  text-align: center;
+  color: #bb99dd;
+  margin-top: 0.8em;
+  margin-bottom: 1em;
+}
+
+.links {
+  color: #bb99dd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+  max-width: 326px;
+}
+.links > a {
+  color: #bb99dd;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: "Poppins";
+  border: 2px solid #bb99dd;
+  border-radius: 4px;
+  width: 326px;
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons > img {
+  margin-top: 0.75em;
+  padding: 0.7em;
+  margin-bottom: 5em;
+}
+
+.profile > img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.icons > img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+
+.links > a:hover {
+  background-color: #bb99dd;
+  color: #fff;
+  transition-property: "background-color";
+  transition-duration: 400ms;
+}
+
+.links > a:active {
+  transform: scale(0.9);
+  transition: transform 0.6s;
+}
